@@ -1,0 +1,981 @@
+img{
+    max-width: 100%;
+    height: auto;
+}
+.header{
+    margin: 14px auto;
+    max-width: 1200px;
+    min-width: 850px;
+}
+.header .subNav{
+    position: relative;
+    float: left;
+    width: 20.8333333%;
+}
+.header .subNav ul li{
+    position: relative;
+    width: 99.2%;
+    height: 53px;
+    border: 1px solid #e6e8e9;
+    border-top: none;
+    text-align: center;
+    background-color: #f3f3f3;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    cursor: pointer;
+}
+.header .subNav ul li>i{
+    font-size: 20px;
+    font-style: normal;
+    line-height: 55px;
+    color: #333333;
+}
+.header .subNav ul li>span{
+    position: absolute;
+    left: 22%;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: 20px;
+    height: 20px;
+    background: url("../images/subNavIcon.png") no-repeat;
+}
+.header .subNav ul li:first-child{
+    border-top: 1px solid #e6e8e9;
+}
+.header .subNav ul li.information>span{
+    background-position: 0 0;
+}
+.header .subNav ul li.business>span{
+    width: 18px;
+    height: 21px;
+    background-position: -40px 0;
+}
+.header .subNav ul li.broadband>span{
+    height: 19px;
+    background-position: -80px 0;
+}
+.header .subNav ul li.pickNumber>span{
+    width: 18px;
+    background-position: -120px 0;
+}
+.header .subNav ul li.roam>span{
+    background-position: -160px 0;
+}
+.header .subNav ul li.integral>span{
+    background-position: -200px 0;
+}
+.header .subNav ul li.active{
+    border-right-color: #ffffff;
+    background-color: #ffffff;
+}
+.header .subNav ul li.active i{
+    color: #32acfb;
+}
+.header .subNav ul li.information.active>span{
+    background-position: 0 -40px;
+}
+.header .subNav ul li.information>div{
+    top: -1px;
+}
+.header .subNav ul li.business.active>span{
+    background-position: -40px -40px;
+}
+.header .subNav ul li.business>div{
+    top: -55px;
+}
+.header .subNav ul li.broadband.active>span{
+    background-position: -80px -40px;
+}
+.header .subNav ul li.broadband>div{
+    top: -109px;
+}
+.header .subNav ul li.pickNumber.active>span{
+    background-position: -120px -40px;
+}
+.header .subNav ul li.pickNumber>div{
+    top: -163px;
+}
+.header .subNav ul li.roam.active>span{
+    background-position: -160px -40px;
+}
+.header .subNav ul li.roam>div{
+    top: -217px;
+}
+.header .subNav ul li.integral.active>span{
+    background-position: -200px -40px;
+}
+.header .subNav ul li.integral>div{
+    top: -271px;
+}
+.header .subNav ul li>div{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 209.6%;
+    height: 323px;
+    border: 1px solid #e6e8e9;
+    border-left: none;
+    background-color: #ffffff;
+    z-index: 999;
+}
+.header .subNav ul li>div.bg{
+    display: block;
+}
+.header .subNav ul li>div>div{
+    margin: 0 auto 18px;
+    width: 90.285714%;
+    cursor: auto;
+}
+.header .subNav ul li>div>div:first-child{
+    margin-top: 25px;
+}
+.header .subNav ul li>div>div p{
+    font-size: 12px;
+    text-align: left;
+    line-height: 12px;
+    color: #32acfb;
+}
+.header .subNav ul li>div>div .cli-list{
+    padding-bottom: 8px;
+    border-bottom: 1px solid #e5e5e5;
+}
+.header .subNav ul li>div>div .cli-list div{
+    float: left;
+    margin-top: 10px;
+    padding: 0 7px;
+    height: 18px;
+    font-size: 12px;
+    line-height: 18px;
+    border-left: 1px solid #e5e5e5;
+}
+.header .subNav ul li>div>div .cli-list div:first-child{
+    padding-left: 0;
+    border-left: none;
+}
+.header .subNav ul li>div>div .cli-list div a{
+    color: #666666;
+}
+/*轮播图样式*/
+.banner {
+    position: relative;
+    float: left;
+    width: 56.666666666%;
+    height: 325px;
+    margin: 0 0.8%;
+    overflow: hidden;
+}
+.banner .bannerInner {
+    width: 100%;
+    height: 325px;
+    background: url("../images/default.gif") no-repeat center #ccc;
+}
+.banner .bannerInner div {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    opacity: 0;
+}
+.banner .bannerInner div img {
+    display: none;
+    width: 100%;
+    height: 100%;
+    border: none;
+    vertical-align: top;
+}
+
+.banner .focusList {
+    position: absolute;
+    right: 2.941176%;
+    bottom: 20px;
+    z-index: 888;
+    list-style: none;
+}
+.banner .focusList li {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #fff;
+    -moz-opacity:0.3;
+    filter: alpha(opacity=30);
+    opacity: 0.3;
+    cursor: pointer;
+    float: left;
+    margin-right: 6px;
+}
+.banner .focusList li.bg {
+    -moz-opacity: 1;
+    filter: alpha(opacity=100);
+    opacity: 1;
+}
+.banner .left, .banner .right {
+    display: none;
+    position: absolute;
+    top: 50%;
+    margin-top: -30px;
+    width: 30px;
+    height: 60px;
+    background: url("../images/pre.png") no-repeat;
+    -moz-opacity: .7;
+    filter: alpha(opacity=70);
+    opacity: .7;
+    z-index: 999;
+}
+.banner .left {
+    left: 0;
+}
+.banner .right {
+    right: 0;
+    background-position: -50px 0;
+}
+.banner a:hover {
+    opacity: 1;
+}
+/*充值话费 流量 及公告样式*/
+.recharge-notice-wrap{
+    float: right;
+    width: 20.66666667%;
+    height: 324px;
+    border: 1px solid #e6e8e9;
+    border-top: none;
+}
+.recharge-notice-wrap .recharge ul li{
+    position: relative;
+    float: left;
+    margin-bottom: 14px;
+    width: 50%;
+    height: 50px;
+    font-size: 18px;
+    text-align: center;
+    line-height: 50px;
+    color: #3baef8;
+    background-color: #ededed;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    cursor: pointer;
+}
+.recharge-notice-wrap .recharge ul li.active{
+    color: #ffffff;
+    background-color: #3baef8;
+}
+.recharge-notice-wrap .recharge ul .triangle{
+    display: none;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid #ffffff;
+}
+.recharge-notice-wrap .recharge ul .triangle.active{
+    display: block;
+}
+.recharge-notice-wrap .recharge .telephoneFare{
+    display: none;
+}
+.recharge-notice-wrap .recharge .telephoneFare.bg{
+    display: block;
+}
+.recharge-notice-wrap .recharge .telephoneFare input{
+    display: block;
+    margin: 0 auto;
+    padding: 0 8%;
+    width: 78%;
+    height: 36px;
+    font-size: 16px;
+    border: 1px solid #e6e8e9;
+    border-radius: 5px;
+}
+.recharge-notice-wrap .recharge .telephoneFare p{
+    font-size: 12px;
+    text-align: center;
+    line-height: 24px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #ea157f;
+}
+.recharge-notice-wrap .recharge .telephoneFare>div div{
+    float: left;
+    margin-bottom: 18px;
+}
+.recharge-notice-wrap .recharge .telephoneFare>div .telephoneFare-select-box,.recharge-notice-wrap .recharge .telephoneFare>div .recharge-telephoneFare-button{
+    width: 44%;
+    cursor: pointer;
+}
+.recharge-notice-wrap .recharge .telephoneFare>div .telephoneFare-select-box select{
+    margin-left: 6%;
+    width: 100%;
+    height: 38px;
+    font-size: 20px;
+    text-align: center;
+    line-height: 38px;
+    color: #ea157f;
+}
+.recharge-notice-wrap .recharge .telephoneFare>div .recharge-telephoneFare-button{
+    margin-left: 10%;
+    height: 38px;
+    font-size: 18px;
+    text-align: center;
+    line-height: 38px;
+    border-radius: 5px;
+    color: #ffffff;
+    background-color: #3baef8;
+}
+.recharge-notice-wrap .notice{
+    width: 100%;
+}
+.recharge-notice-wrap .notice>div:first-child{
+    position: relative;
+    width: 100%;
+    height: 44px;
+    font-size: 18px;
+    line-height: 44px;
+    color: #333333;
+    background-color: #ededed;
+}
+.recharge-notice-wrap .notice>div:first-child div{
+    position: absolute;
+    left: 4.032258%;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: 1.2%;
+    height: 16px;
+    background-color: #3baef8;
+}
+.recharge-notice-wrap .notice>div:first-child p{
+    padding-left: 9.677419%;
+}
+.recharge-notice-wrap .notice ul{
+    padding: 18px 4.03226% 18px 3.225806%;
+}
+.recharge-notice-wrap .notice ul li{
+    font-size: 14px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    list-style-position: inside;
+    list-style-type: disc;
+    cursor: pointer;
+}
+.recharge-notice-wrap .notice ul li a{
+    margin-left: -3%;
+    font-size: 14px;
+    color: #333333;
+}
+.recharge-notice-wrap .notice ul li a:hover{
+    color: #3baef8;
+    border-bottom: 1px solid #3baef8;
+}
+/*banner下方切换模块样式*/
+.slideBox{
+    position: relative;
+    margin: 0 auto 30px;
+    max-width: 1200px;
+    min-width: 850px;
+    overflow: hidden;
+    height: 100px;
+}    
+.slideBox ul{
+    position: relative;
+    width: 160.3333333%;
+    height: 100px;
+}
+.slideBox ul li{
+    position: relative;
+    float: left;
+    margin-left: 0.675676%;
+    width: 11.954262%;
+    height: 100px;
+    line-height: 100px;
+    font-size: 20px;
+    color: #2991d2;
+    background-color: #f3f3f3;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    cursor: pointer;
+}
+.slideBox ul li.active{
+    width: 11.850312%;
+    height: 98px;
+    line-height: 98px;
+    border: 1px solid #e4e4e4;
+    background-color: #ffffff;
+}
+.slideBox ul li:first-child{
+    margin-left: 0;
+}
+.slideBox ul li i{
+    left: 16%;
+    position: absolute;
+    font-style: normal;
+}
+.slideBox ul li.active i{
+    left: 15.7%;
+}
+.slideBox ul li.active span{
+    left: 137px;
+}
+.slideBox ul li span{
+    position: absolute;
+    left: 138px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: 50px;
+    height: 50px;
+    background: url("../images/listIcon.png") no-repeat;
+}
+.slideBox ul li span.list1{
+    background-position: -82px 0;
+}
+.slideBox ul li span.list2{
+    background-position: -152px 0;
+}
+.slideBox ul li span.list3{
+    background-position: -223px 0;
+}
+.slideBox ul li span.list4{
+    background-position: -293px 0;
+}
+.slideBox ul li span.list5{
+    background-position: -363px 0;
+}
+.slideBox ul li span.list6{
+    background-position: -434px 0;
+}
+.slideBox ul li span.list7{
+    background-position: -503px 0;
+}
+.slideBox ul li span.list8{
+    background-position: -565px 0;
+}
+.slideBox>div{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: 21px;
+    height: 41px;
+    background: url("../images/listIcon.png") 0 -9px no-repeat;
+    cursor: pointer;
+}
+.slideBox .next{
+    right: 0;
+    background-position: -41px -9px;
+}
+.main{
+    margin: 0 auto 30px;
+    max-width: 1200px;
+    min-width: 850px;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+.main .areaTitle{
+    position: relative;
+    margin-bottom: 16px;
+    width: 100%;
+    height: 23px;
+}
+.main .areaTitle span{
+    position: absolute;
+    width: 0.416667%;
+    height: 23px;
+    background-color: #0085d0;
+}
+.main .areaTitle p{
+    position: absolute;
+    left: 15px;
+    font-size: 24px;
+    line-height: 24px;
+    color: #333333;
+}
+.main .areaTitle i{
+    position: absolute;
+    left: 130px;
+    bottom: 0;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 14px;
+    color: #909090;
+}
+.main .areaTitle a{
+    position: absolute;
+    bottom: 0;
+    right: 5px;
+    font-size: 14px;
+    vertical-align: middle;
+    line-height: 14px;
+    color: #666666;
+}
+.main .content{
+    position: relative;
+    width: 100%;
+    height: 350px;
+}
+.main .content>div{
+    position: absolute;
+    left: 24.8333333%;
+    width: 75%;
+}
+.main .content>div:first-child{
+    left: 0;
+    width: 24.8333333%;
+    padding-top: 20px;
+    height: 328px;
+    text-align: center;
+    border: 1px solid #e6e8e9;
+}
+.main .content>div:first-child p{
+    font-size: 20px;
+    line-height: 20px;
+    color: #333333;
+}
+.main .content>div:first-child i{
+    display: block;
+    margin: 12px 0 50px;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 20px;
+    color: #909090;
+}
+.main .content>div ul{
+    width: 100%;
+}
+.main .content>div ul li{
+    position: relative;
+    float: left;
+    height: 173px;
+    border: 1px solid #e6e8e9;
+    border-left: none;
+    cursor: pointer;
+}
+.main .content>div ul li:hover{
+    border-top: 1px solid #dd116b;
+}
+.main .content>div ul li p,.main .content>div ul li span,.main .content>div ul li img,.main .content>div ul li div,.main.discount .content>div ul:first-child li>i{
+    position: absolute;
+}
+.main .content>div ul li>img{
+    bottom: 0;
+    right: 0;
+}
+.main.discount .content>div ul:first-child li>i{
+    right: 22px;
+    width: 31px;
+    height: 102px;
+    background: url("../images/biaoqian9.png")-42px 0 no-repeat;
+}
+.main.discount .content>div ul:first-child li:first-child>i{
+    background-position: -2px 0;
+}
+.main .content>div ul li div{
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 348px;
+    z-index: 10;
+}
+.main .content>div ul li div img{
+    width: 100%;
+    height: 348px;
+}
+.main .content .last img{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.main .content>div ul li p,.main .content>div ul li span{
+    left: 20px;
+}
+.main .content>div ul:first-child li{
+    height: 174px;
+    border-bottom: none;
+}
+.main .content>div ul.one li{
+    width: 99.699999%;
+}
+.main .content>div ul.two li{
+    width: 49.777777%;
+}
+.main .content>div ul.three li{
+    width: 33.155555%;
+}
+.main .content>div ul li p{
+    top: 20px;
+    font-size: 20px;
+    line-height: 20px;
+    color: #333333;
+}
+.main .content>div ul li span{
+    top: 58px;
+    font-size: 12px;
+    line-height: 18px;
+    color: #909090;
+}
+.main .content>div ul li p.price{
+    top: 120px;
+    font-size: 30px;
+    line-height: 30px;
+    color: #dd116b;
+}
+.main .content>div ul li p.price i{
+    font-style: normal;
+    font-size: 20px;
+}
+.main.discount .content>div:first-child{
+    background-color: #fff6e8;
+}
+.main.flow .content>div:first-child{
+    background-color: #f7ffed;
+}
+.main.flow .content>div:first-child i{
+    margin-bottom: 28px;
+}
+.main.broadband .content>div:first-child{
+    background-color: #eff9fe;
+}
+.main.broadband .content>div:first-child p{
+    margin-bottom: 25px;
+}
+.main.number .content>div:first-child{
+    background-color: #fff6e8;
+}
+.main.number .content>div:first-child p{
+    margin-bottom: 26px;
+}
+.main.purchase .content>div:first-child{
+    background-color: #eff9fe;
+}
+.main.purchase .content>div:first-child p{
+    margin-bottom: 36px;
+}
+.main.broadband .content>div ul li.listBox{
+    overflow: hidden;
+}
+.main.broadband .content>div ul li.listBox>div{
+    position: relative;
+    top: 58px;
+    padding: 0 0 26px 2.333333%;
+    height: 149px;
+}
+.main.broadband .content>div ul li.listBox>div div{
+    position: relative;
+    float: left;
+    margin-right: 1.111111%;
+    width: 14.7778%;
+    height: 88px;
+    border: 1px solid #e6e8e9;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.main.broadband .content>div ul li.listBox>div div span{
+    display: block;
+    margin: 0 auto;
+    position: inherit;
+    top: 9px;
+    left: 0;
+    background: url("../images/fwIcon.png") no-repeat;
+}
+.main.broadband .content>div ul li.listBox>div div span.ico1{
+    width: 60px;
+    height: 45px;
+    background-position: -14px 0;
+}
+.main.broadband .content>div ul li.listBox>div div span.ico2{
+    top: 13px;
+    width: 61px;
+    height: 42px;
+    background-position: -98px 0;
+}
+.main.broadband .content>div ul li.listBox>div div span.ico3{
+    top: 17px;
+    width: 60px;
+    height: 36px;
+    background-position: -184px 0;
+}
+.main.broadband .content>div ul li.listBox>div div span.ico4{
+    top: 13px;
+    width: 36px;
+    height: 41px;
+    background-position: -270px 0;
+}
+.main.broadband .content>div ul li.listBox>div div span.ico5{
+    top: 13px;
+    width: 41px;
+    height: 41px;
+    background-position: -333px 0;
+}
+.main.broadband .content>div ul li.listBox>div div span.ico6{
+    top: 15px;
+    width: 35px;
+    height: 33px;
+    background-position: -401px 0;
+}
+.main.broadband .content>div ul li.listBox>div div p{
+    position: absolute;
+    top: 62px;
+    left: 0;
+    width: 100%;
+    font-size: 16px;
+    text-align: center;
+    color: #359eef;
+}
+/*宽带隐藏档位样式*/
+.main.broadband{
+    position: relative;
+}
+.main.broadband .content>div:first-child{
+    cursor: pointer;
+}
+.main.broadband .hideBox{
+    display: none;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding-top: 155px;
+    width: 24.8333333%;
+    height: 193px;
+    border: 1px solid #e6e8e9;
+    background-color: #f3f3f3;
+    z-index: 10;
+}
+.main.broadband .hideBox div{
+    margin: 0 auto 30px;
+    width: 160px;
+    font-size: 16px;
+    line-height: 36px;
+    text-align: center;
+    color: #909090;
+    border-bottom: 1px solid #e6e8e9;
+}
+.main.broadband .hideBox ul{
+    margin: 0 auto;
+    width: 225px;
+}
+.main.broadband .hideBox ul li{
+    float: left;
+    margin-right: 11.11111%;
+    width: 44.44444%;
+    height: 50px;
+    font-size: 30px;
+    text-align: center;
+    line-height: 50px;
+    color: #3baef8;
+    cursor: pointer;
+}
+.main.broadband .hideBox ul li.even{
+    margin-right: 0;
+}
+.main.broadband .hideBox ul li:hover{
+    color: #ffffff;
+    background-color: #3baef8;
+}
+.main.number .content>div ul li{
+    background: url("../images/hmBg.png") no-repeat;
+}
+.main.number .content>div ul li img{
+    right: 29.55555%;
+}
+.main.number .content>div ul li.ka1{
+    background-position: -62px -39px;
+}
+.main.number .content>div ul li.ka2{
+    background-position: -592px -39px;
+}
+.main.number .content>div ul li.ka3{
+    background-position: -60px -284px;
+}
+.main.number .content>div ul li.ka4{
+    background-position: -592px -284px;
+}
+.main.purchase .content>div ul li>img{
+    right: 13.33333%;
+}
+/*底部二维码样式*/
+.two-bar-codes{
+    position: fixed;
+    left: -110%;
+    bottom: 0;
+    padding: 0 25.785714% 0 26%;
+    width: 614px;
+    height: 166px;
+    background-color: rgba(0,17,40,0.8);
+    z-index: 100;
+}
+@media \0screen\,screen\9{
+    .two-bar-codes{
+        background-color: #001128;
+        filter: alpha(opacity=80);
+        zoom: 1;
+    }
+}
+.two-bar-codes p{
+    font-size: 14px;
+    line-height: 33px;
+    text-align: center;
+    color: #ffffff;
+}
+.two-bar-codes>div{
+    float: left;
+    width: 300px;
+    height: 166px;
+    text-align: center;
+    background-color: rgba(73,88,111,0.8);
+}
+@media \0screen\,screen\9{
+    .two-bar-codes>div{
+        background-color: #49586f;
+        filter: alpha(opacity=80);
+        zoom: 1;
+    }
+}
+.two-bar-codes>div:first-child{
+    margin-right: 8.5%;
+    width: 260px;
+    background-color: rgba(0,17,40,0);
+}
+@media \0screen\,screen\9{
+    .two-bar-codes>div:first-child{
+        background-color: #001128;
+        filter: alpha(opacity=0);
+        zoom: 1;
+    }
+}
+.two-bar-codes>div:first-child>div{
+    width: 100%;
+    height: 121px;
+    background-color: rgba(46,57,74,0.8);
+    border-radius: 10px;
+}
+@media \0screen\,screen\9{
+    .two-bar-codes>div:first-child>div{
+        background-color: #2e394a;
+        filter: alpha(opacity=0.8);
+        zoom: 1;
+    }
+}
+.two-bar-codes>div:first-child>div>div{
+    margin: 0 auto;
+    width: 72.307692%;
+    height: 121px;
+    text-align: center;
+    background-color: rgba(73,88,111,0.8);
+}
+@media \0screen\,screen\9{
+    .two-bar-codes>div:first-child>div>div{
+        background-color: #49586f;
+        filter: alpha(opacity=0.8);
+        zoom: 1;
+    }
+}
+.two-bar-codes div img{
+    margin: 5px auto;
+}
+.two-bar-codes>span{
+    position: absolute;
+    top: 7px;
+    right: 180px;
+    width: 36px;
+    height: 36px;
+    background: url("../images/footerClose.png") center no-repeat;
+    background-size: cover;
+    cursor: pointer;
+}
+.shrink{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 41px;
+    height: 166px;
+    background-color: rgba(0,17,40,0.8);
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    z-index: 200;
+}
+@media \0screen\,screen\9{
+    .shrink{
+        background-color: #001128;
+        filter: alpha(opacity=0.8);
+        zoom: 1;
+    }
+}
+.shrink p{
+    position: absolute;
+    top: 35px;
+    right: 19px;
+    width: 14px;
+    font-size: 14px;
+    color: #ffffff;
+}
+.shrink span{
+    position: absolute;
+    top: 45%;
+    font-size: 20px;
+    right: -5px;
+    color: #ffffff;
+}
+/*右侧楼层样式*/
+.jumpBox{
+    position: fixed;
+    top: 30%;
+    right: 0;
+    z-index: 200;
+}
+.jumpBox ul li{
+    width: 48px;
+    height: 48px;
+    font-size: 22px;
+    line-height: 48px;
+    text-align: center;
+    border: 1px solid #e6e8e9;
+    border-top: none;
+    color: #909090;
+    background-color: #f3f3f3;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    cursor: pointer;
+}
+.jumpBox ul li:first-child{
+    border-top: 1px solid #e6e8e9;
+}
+.jumpBox ul li.last{
+    margin-top: 10px;
+    border-top: 1px solid #e6e8e9;
+    background-color: #ffffff;
+}
+.jumpBox ul li.last span{
+    display: block;
+    margin: 12px auto;
+    width: 20px;
+    height: 24px;
+    background: url("../images/biaoqian9.png") -81px 0 no-repeat;
+}
+.jumpBox ul li:hover,.jumpBox ul li.active{
+    height: 47px;
+    line-height: 46px;
+    color: #3baef8;
+    border: 1px solid #3baef8;
+    background-color: #ffffff;
+}
+.jumpBox ul li:first-child:hover,.jumpBox ul li:first-child.active{
+    height: 48px;
+    line-height: 48px;
+}
