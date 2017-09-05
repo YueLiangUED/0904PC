@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1b1e5e09-67a9-495c-869e-c07d18bb4a1f" name="Default" comment="" />
+    <list default="true" id="1b1e5e09-67a9-495c-869e-c07d18bb4a1f" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/default.gif" afterPath="$PROJECT_DIR$/images/default.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
+    </list>
     <ignored path="0830北京移动官网网上营业厅.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -21,11 +26,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="532">
-              <caret line="697" column="0" selection-start-line="697" selection-start-column="0" selection-end-line="697" selection-end-column="0" />
+            <state relative-caret-position="127">
+              <caret line="682" column="6" selection-start-line="682" selection-start-column="6" selection-end-line="682" selection-end-column="6" />
               <folding>
                 <element signature="n#li#1;n#ul#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#style#0;n#select#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -39,11 +44,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="477">
-              <caret line="977" column="67" selection-start-line="977" selection-start-column="67" selection-end-line="977" selection-end-column="67" />
+            <state relative-caret-position="449">
+              <caret line="743" column="33" selection-start-line="743" selection-start-column="33" selection-end-line="743" selection-end-column="33" />
               <folding />
             </state>
           </provider>
@@ -72,14 +77,17 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/data.txt" />
         <option value="$PROJECT_DIR$/js/banner.js" />
-        <option value="$PROJECT_DIR$/css/style.css" />
         <option value="$PROJECT_DIR$/js/index.js" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/css/style.css" />
       </list>
     </option>
   </component>
@@ -93,7 +101,7 @@
     <option name="width" value="1232" />
     <option name="height" value="777" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
     <OptionsSetting value="true" id="Remove" />
     <OptionsSetting value="true" id="Checkout" />
@@ -281,12 +289,12 @@
       <workItem from="1504162253986" duration="3698000" />
       <workItem from="1504168855958" duration="10120000" />
       <workItem from="1504367112856" duration="21616000" />
-      <workItem from="1504493533246" duration="15990000" />
+      <workItem from="1504493533246" duration="16832000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="83506000" />
+    <option name="totallyTimeSpent" value="84348000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1232" height="777" extended-state="6" />
@@ -679,11 +687,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/images/default.gif">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/images/biaoqian9.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -717,14 +720,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="477">
-          <caret line="977" column="67" selection-start-line="977" selection-start-column="67" selection-end-line="977" selection-end-column="67" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="443">
@@ -735,10 +730,15 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/images/default.gif">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="532">
-          <caret line="697" column="0" selection-start-line="697" selection-start-column="0" selection-end-line="697" selection-end-column="0" />
+        <state relative-caret-position="127">
+          <caret line="682" column="6" selection-start-line="682" selection-start-column="6" selection-end-line="682" selection-end-column="6" />
           <folding>
             <element signature="n#li#1;n#ul#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#style#0;n#select#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -748,6 +748,14 @@
             <element signature="n#div#6;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#style#0;n#div#10;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="449">
+          <caret line="743" column="33" selection-start-line="743" selection-start-column="33" selection-end-line="743" selection-end-column="33" />
+          <folding />
         </state>
       </provider>
     </entry>

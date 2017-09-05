@@ -170,7 +170,7 @@ img{
 .banner .bannerInner {
     width: 100%;
     height: 325px;
-    background: url("../images/default.gif") no-repeat center #ccc;
+    background: url("../images/default.gif") no-repeat center #ffffff;
 }
 .banner .bannerInner div {
     position: absolute;
@@ -188,7 +188,6 @@ img{
     border: none;
     vertical-align: top;
 }
-
 .banner .focusList {
     position: absolute;
     right: 2.941176%;
@@ -738,8 +737,11 @@ img{
 .main.broadband{
     position: relative;
 }
-.main.broadband .content>div:first-child{
+.main .content>div:first-child{
     cursor: pointer;
+}
+.main .content>div:first-child:hover{
+    border-top: 1px solid #dd116b;
 }
 .main.broadband .hideBox{
     display: none;
@@ -933,6 +935,7 @@ img{
 }
 /*右侧楼层样式*/
 .jumpBox{
+    display: none;
     position: fixed;
     top: 30%;
     right: 0;
