@@ -25,6 +25,12 @@ img{
     user-select: none;
     cursor: pointer;
 }
+.header .subNav ul li>a{
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
 .header .subNav ul li>i{
     font-size: 20px;
     font-style: normal;
@@ -34,9 +40,8 @@ img{
 .header .subNav ul li>span{
     position: absolute;
     left: 22%;
-    top: 0;
-    bottom: 0;
-    margin: auto;
+    top: 50%;
+    margin-top: -10px;
     width: 20px;
     height: 20px;
     background: url("../images/subNavIcon.png") no-repeat;
@@ -267,9 +272,8 @@ img{
     display: none;
     position: absolute;
     bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
+    left: 50%;
+    margin-left: -5px;
     width: 0;
     height: 0;
     border-left: 5px solid transparent;
@@ -346,9 +350,8 @@ img{
 .recharge-notice-wrap .notice>div:first-child div{
     position: absolute;
     left: 4.032258%;
-    top: 0;
-    bottom: 0;
-    margin: auto;
+    top: 50%;
+    margin-top: -8px;
     width: 1.2%;
     height: 16px;
     background-color: #3baef8;
@@ -406,6 +409,13 @@ img{
     user-select: none;
     cursor: pointer;
 }
+.slideBox ul li>a{
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+}
 .slideBox ul li.active{
     width: 11.850312%;
     height: 98px;
@@ -430,9 +440,8 @@ img{
 .slideBox ul li span{
     position: absolute;
     left: 138px;
-    top: 0;
-    bottom: 0;
-    margin: auto;
+    top: 50%;
+    margin-top: -25px;
     width: 50px;
     height: 50px;
     background: url("../images/listIcon.png") no-repeat;
@@ -463,13 +472,13 @@ img{
 }
 .slideBox>div{
     position: absolute;
-    top: 0;
-    bottom: 0;
-    margin: auto;
+    top: 50%;
+    margin-top: -20px;
     width: 21px;
     height: 41px;
     background: url("../images/listIcon.png") 0 -9px no-repeat;
     cursor: pointer;
+    z-index: 30;
 }
 .slideBox .next{
     right: 0;
@@ -516,8 +525,6 @@ img{
     bottom: 0;
     right: 5px;
     font-size: 14px;
-    vertical-align: middle;
-    line-height: 14px;
     color: #666666;
 }
 .main .content{
@@ -580,6 +587,13 @@ img{
 }
 .main.discount .content>div ul:first-child li:first-child>i{
     background-position: -2px 0;
+}
+.main .content>div>a,.main .content>div ul li>a,.main .content>div ul li>div>a{
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
 }
 .main .content>div ul li div{
     top: 0;
@@ -683,10 +697,9 @@ img{
 }
 .main.broadband .content>div ul li.listBox>div div span{
     display: block;
-    margin: 0 auto;
-    position: inherit;
+    margin-left: -30px;
     top: 9px;
-    left: 0;
+    left: 50%;
     background: url("../images/fwIcon.png") no-repeat;
 }
 .main.broadband .content>div ul li.listBox>div div span.ico1{
@@ -708,18 +721,21 @@ img{
 }
 .main.broadband .content>div ul li.listBox>div div span.ico4{
     top: 13px;
+    margin-left: -18px;
     width: 36px;
     height: 41px;
     background-position: -270px 0;
 }
 .main.broadband .content>div ul li.listBox>div div span.ico5{
     top: 13px;
+    margin-left: -20px;
     width: 41px;
     height: 41px;
     background-position: -333px 0;
 }
 .main.broadband .content>div ul li.listBox>div div span.ico6{
     top: 15px;
+    margin-left: -18px;
     width: 35px;
     height: 33px;
     background-position: -401px 0;
@@ -940,7 +956,16 @@ img{
     top: 30%;
     right: 0;
     z-index: 200;
+    _position: absolute;
+    _clear: both;
+    _top:expression(eval(document.compatMode &&
+               document.compatMode=='CSS1Compat') ?
+               documentElement.scrollTop
+               +(documentElement.clientHeight-this.clientHeight) - 1
+               : document.body.scrollTop
+               +(document.body.clientHeight-this.clientHeight) - 1);
 }
+
 .jumpBox ul li{
     width: 48px;
     height: 48px;

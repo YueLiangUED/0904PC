@@ -13,7 +13,7 @@ $(function () {
             $lis = null,
             res = null;
 //获取数据
-        (function getData() {
+        /*(function getData() {
             $.ajax({
                 url: url + '?_=' + Math.random,
                 type: 'get',
@@ -24,8 +24,17 @@ $(function () {
                 }
             });
         })();
+        console.log(res);*/
 //绑定数据
         (function bindData() {
+            res = [{"src":"images/banner1.jpg","title":"biaoti","desc":"miaoshu"},
+                {"src":"images/banner2.jpg","title":"biaoti","desc":"miaoshu"},
+                {"src":"images/banner3.jpg","title":"biaoti","desc":"miaoshu"},
+                {"src":"images/banner4.jpg","title":"biaoti","desc":"miaoshu"},
+                {"src":"images/banner5.jpg","title":"biaoti","desc":"miaoshu"},
+                {"src":"images/banner6.jpg","title":"biaoti","desc":"miaoshu"},
+                {"src":"images/banner7.jpg","title":"biaoti","desc":"miaoshu"},
+                {"src":"images/banner8.jpg","title":"biaoti","desc":"miaoshu"}]
             var str = '';
             var strLi = '';
             $.each(res, function (index, item) {
@@ -106,5 +115,17 @@ $(function () {
     $.fn.extend({
         banner : banner
     });
-    $('#banner').banner('data.txt');
+    $('#banner').banner('data.json');
+    
+    //轮播图链接
+    $('.bannerInner>div:nth-child(1)').on('click',function () {
+        window.location.href = '';
+    });
+    $('.bannerInner>div:nth-child(2)').on('click',function () {
+        window.location.href = '';
+    });
+    $('.bannerInner>div:nth-child(3)').on('click',function () {
+        window.location.href = '';
+    });
+    
 });

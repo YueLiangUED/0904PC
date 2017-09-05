@@ -53,10 +53,10 @@ $(function () {
                 left: 0
             });
         }
-        timer = setInterval(scroll,2000);
+        timer = setInterval(scroll,3000);
         //鼠标离开继续滚动
         $slideBox.on('mouseout',function () {
-            timer = setInterval(scroll,2000);
+            timer = setInterval(scroll,3000);
         });
         //鼠标移入悬停
         $slideBox.on('mouseover',function(){
@@ -130,19 +130,19 @@ $(function () {
     $(document).scroll(function() {
 			if($(document).scrollTop() >= 469) {
 				$(".jumpBox").fadeIn(500);
-				var i = Math.floor(($(document).scrollTop() - 469) / 419);
+				var i = Math.floor(($(document).scrollTop() - 469) / 389);
 				$(".jumpBox ul li").eq(i).addClass("active");
 				$(".jumpBox ul li").eq(i).siblings().removeClass("active")}else{
 				$(".jumpBox").fadeOut(333);
 			}
-		})
+		});
 		
 		
 		$(".jumpBox ul li").not(".last").click(function() {
-			$("body,html").animate({ "scrollTop": $(this).index() * 419 + 469 }, 500);
-		})
+			$("body,html").animate({ "scrollTop": $(this).index() * 389 + 469 }, 500);
+		});
 		
 		$(".jumpBox ul .last").click(function(){
 			$("body").animate({ "scrollTop":0 },500);
-		})
+		});
 });
